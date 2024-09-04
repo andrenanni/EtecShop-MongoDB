@@ -1,0 +1,97 @@
+// Acessar o servidor
+mongosh "mongodb+srv://cluster0.gfsbd.mongodb.net/" --apiVersion 1 --username admin
+
+// Acessar ou Criar o banco
+use EtecShop
+
+// Criar a coleção de Produtos
+db.produtos.insertMany([
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+{
+    nome: "#",
+    descricao: "#",
+    preco: #,
+    precoDesconto: #,
+    categoria: ["", ""]
+    tags: ["", ""],
+    marca: "",
+    estoque: 1,
+    ativo: true
+},
+])
