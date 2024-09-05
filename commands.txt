@@ -1,0 +1,8 @@
+dotnet new sln --name EtecShop
+
+dotnet new webapi -o EtecShopAPI --use-controllers
+
+dotnet sln add EtecShopAPI\EtecShopAPI.csproj
+
+cd EtecShopAPI
+dotnet add package MongoDB.Driver

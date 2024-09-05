@@ -7,91 +7,91 @@ use EtecShop
 // Criar a coleção de Produtos
 db.produtos.insertMany([
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
-    precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    nome: "Câmera Gopro Hero 13 Black",
+    descricao: "A HERO13 Black expande seu potencial criativo com as lentes HB-Series com Detecção automática, além da compatibilidade com o Suporte de trava magnética e novas maneiras de prolongar a carga da bateria. Além disso, ela apresenta um novo design da estrutura (ainda se encaixa no mesmo estojo protetor da HERO12 Black e no Módulo de mídia), uma nova bateria e pontos de conexão de bateria, GPS e sobreposição de dados, Disparo contínuo em Câmera lenta (até 400 qps a 720p), HLG HDR de 10 bits e Wi-Fi6.",
+    preco: R$ 3599,
+    precoDesconto: 3399,
+    categoria: ["Câmeras", "Câmeras de Ação"],
+    tags: ["Eletrônicos", "Câmeras de Ação", "Câmeras", "Esporte"],
+    marca: "Gopro",
+    estoque: 100,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
-    precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    nome: "Câmera Gopro Hero 12 Black",
+    descricao: "A HERO12 Black eleva o nível da melhor qualidade de imagem da categoria da GoPro com o novo vídeo HDR (High Dynamic Range) em 5,3K e 4K, a estabilização de vídeo HyperSmooth 6.0 melhorada e um campo de visão líder do setor de 177° com o Módulo de lente Max 2.0. Outros novos recursos incluem um sistema de gerenciamento de energia totalmente renovado, com desempenho térmico aprimorado e duração até duas vezes maior1. Além disso, ela oferece suporte de áudio Bluetooth para os AirPods da Apple e para outros headphones, permitindo que você grave sons e use comandos por voz remotamente. A câmera também possui recursos de nível profissional, como a capacidade de sincronizar várias câmeras HERO12 por meio do código de tempo, controles de cores avançados e muito mais. A HERO12 combina tudo isso com o design ultrarresistente e à prova d'água da GoPro, garantindo que você consiga capturas perfeitas em qualquer ambiente.",
+    preco: 2599,
+    precoDesconto: 2399,
+    categoria: ["Câmeras", "Câmeras de Ação"],
+    tags: ["Eletrônicos", "Câmeras de Ação", "Câmeras", "Esporte"],
+    marca: "Gopro",
+    estoque: 100,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
-    precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    nome: "Drone DJI Mavic 3 Pro",
+    descricao: "O DJI Mavic Série 3 apresenta desempenho de imagem de nível superior. O sistema de câmera tripla do Mavic 3 Pro inaugura uma nova era de drones de câmera ao abrigar três sensores e lentes com diferentes distâncias focais. Equipado com uma câmera Hasselblad e telecâmeras duplas, o Mavic 3 Pro é um drone de câmera tripla que abre novas perspectivas fotográficas, permitindo que você aproveite ainda mais a liberdade criativa, capture cenários fascinantes, explore narrativas fotográficas e crie obras-primas cinematográficas.",
+    preco: 27990,
+    precoDesconto: 24799,
+    categoria: ["Drones"]
+    tags: ["Drones", "DJI"],
+    marca: "DJI",
+    estoque: 20,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
-    precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    nome: "Drone DJI Mini 4 Pro",
+    descricao: "DJI Mini 4 Pro é nosso drone com minicâmera mais avançado até hoje. Ele integra poderosos recursos de imagem, detecção de obstáculos omnidirecional, ActiveTrack 360° com o novo modo manual e transmissão de vídeo FHD de 20 km, trazendo ainda mais coisas para amar tanto para profissionais quanto para iniciantes.",
+    preco: 10490,
+    precoDesconto: 9457,
+    categoria: ["Drones"]
+    tags: ["Drones", "DJI"],
+    marca: "DJI",
+    estoque: 50,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
-    precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    nome: "Estabilizador DJI Ronin 2",
+    descricao: "Ronin 2 existe para permitir que os cineastas capturem a cena que veem em suas mentes. Motores de alto torque atualizados permitem suportar uma gama mais ampla de câmeras, resistir a ventos fortes e forças G causadas quando montado em um carro e mantê-lo em movimento suave durante o vôo.",
+    preco: 4573250,
+    precoDesconto: 45710,
+    categoria: ["Estabilizadores DJI", "Estabilizadores para camera"]
+    tags: ["Estabilizadores DJI", "DJI"],
+    marca: "DJI",
+    estoque: 10,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
+    nome: "Câmera Red Digital Cinema V-Raptor",
+    descricao: "Compacta, rápida e full-frame - a câmera V-RAPTOR 8K VV preta é uma introdução impressionante à nova plataforma DSMC3 da RED DIGITAL CINEMA . Com tamanho apenas um pouco maior que o KOMODO, mas com um novo sensor, o V-RAPTOR oferece captura multiformato em 8K VV, 6K Super35, 4K, 3K Super16 e opções anamórficas. Essa versatilidade permite que você adapte seu formato de projeto para projeto para se adequar à sua escolha de uma variedade de lentes profissionais ou fotográficas. A montagem de lente RF do V-RAPTOR pode ser usada com vários adaptadores de lente e possui um anel de trava que fornece segurança adicional para uso com lentes mais pesadas e captura estável e totalmente aberta.",
+    preco: 260997,
     precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    categoria: ["Câmera", "Cinema", "Profissional"]
+    tags: ["Câmera de Cinema", "Câmera Red", "Câmera Profissional"],
+    marca: "Red",
+    estoque: 2,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
+    nome: "Câmera Red Digital Cinema KOMODO-X 6K",
+    descricao: "A RED avança ainda mais sua linha KOMODO com o lançamento da KOMODO-X 6K, uma câmera de cinema digital com taxas de quadros mais rápidas, um sensor S35 redesenhado e um formato atualizado que inclui interfaces avançadas de vídeo e áudio. Com Wi-Fi integrado e um conector USB-C, o KOMODO-X fornece uma plataforma poderosa para captura profissional suave, configurações multicâmera e fluxos de trabalho baseados em IP, incluindo transmissão ao vivo. ",
+    preco: 118899,
     precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    categoria: ["Câmera", "Cinema", "Profissional"]
+    tags: ["Câmera de Cinema", "Câmera Red", "Câmera Profissional"],
+    marca: "Red",
+    estoque: 3,
     ativo: true
 },
 {
-    nome: "#",
-    descricao: "#",
-    preco: #,
+    nome: "Câmera Red Digital Cinema DSMC2 Brain",
+    descricao: "Agrupando gravação de vídeo raw de alto desempenho em um corpo de câmera compacto, o RED DIGITAL CINEMA DSMC2 BRAIN com sensor MONSTRO 8K VV faz parte da linha DSMC2 unificada de 2018 e foi projetado para ser construído da maneira que você deseja, para contar sua história em quase qualquer maneira possível. Como o formato DSMC2 é padrão, acessórios da RED e de outros fabricantes podem ser facilmente anexados para complementar sua câmera. O sensor full-frame MONSTRO 8K possui até 17 stops de faixa dinâmica e pode gravar o círculo de imagem completo de lentes full-frame de 35 mm. Você também pode usar lentes Super35 com uma área de captura em janela para gravação de alta taxa de quadros. Sentado na frente do sensor full-frame está uma montagem PL intercambiável. Dessa forma, você pode usar lentes de cinema padrão do setor imediatamente ou trocar a montagem para usar lentes de foto e vídeo alternativas.",
+    preco: 269849,
     precoDesconto: #,
-    categoria: ["", ""]
-    tags: ["", ""],
-    marca: "",
-    estoque: 1,
+    categoria: ["Câmera", "Cinema", "Profissional"]
+    tags: ["Câmera de Cinema", "Câmera Red", "Câmera Profissional"],
+    marca: "Red",
+    estoque: 2,
     ativo: true
 },
 ])
