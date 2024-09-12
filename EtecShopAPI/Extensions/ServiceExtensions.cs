@@ -1,3 +1,6 @@
+using EtecShopAPI.Models;
+using MongoDB.Driver;
+
 namespace EtecShopAPI.Extensions;
 
 public static class ServiceExtensions
@@ -9,14 +12,21 @@ public static class ServiceExtensions
             options.AddPolicy("CorsPolicy",
                 builder => builder
                     .AllowAnyOrigin()
-                    .AllowAnyOrigin()
-                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
                 );
         });
     }
 
     public static void ConfigureMongoDBSettings(this IServiceCollection services, IConfiguration config)
     {
-        
+       services.Configure<MongoDBSettings>(
+            config.GetSection("MongoDBSettings")
+       );
+       services.AddSingleton<IMongoDatabase>(optional => {
+            var settings = config.GetSection("MongoDBSettings").Get<MongoDBSettings>();
+            var client = new MongoClient(settings.ConnectionString);
+            return client.GetDatabase(settings.DatabaseName);
+       });
     }   
 }
