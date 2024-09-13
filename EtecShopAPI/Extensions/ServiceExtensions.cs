@@ -1,4 +1,5 @@
 using EtecShopAPI.Models;
+using EtecShopAPI.Repositories;
 using MongoDB.Driver;
 
 namespace EtecShopAPI.Extensions;
@@ -20,13 +21,21 @@ public static class ServiceExtensions
 
     public static void ConfigureMongoDBSettings(this IServiceCollection services, IConfiguration config)
     {
-       services.Configure<MongoDBSettings>(
-            config.GetSection("MongoDBSettings")
-       );
-       services.AddSingleton<IMongoDatabase>(optional => {
+        services.Configure<MongoDBSettings>(
+             config.GetSection("MongoDBSettings")
+        );
+        services.AddSingleton<IMongoDatabase>(optional =>
+        {
             var settings = config.GetSection("MongoDBSettings").Get<MongoDBSettings>();
             var client = new MongoClient(settings.ConnectionString);
             return client.GetDatabase(settings.DatabaseName);
-       });
-    }   
+        });
+    }
+
+    public static void ConfigureRepositories(this IServiceCollection services)
+    {
+        services.AddSingleton<IProdutoRepository, ProdutoRepository>();
+    }
+
+
 }
